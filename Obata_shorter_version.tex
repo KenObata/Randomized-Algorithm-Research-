@@ -155,29 +155,20 @@
 
 \maketitle
 
-\begin{abstract}
-This paper investigates the problem of voting manipulation under complete information when manipulators know a full preference profile of other voters. Our main contribution includes analysis of a randomized candidate method as a potential solution to prevent voting manipulation and probabilistic measurement of the approximation of the randomized algorithm.
-\end{abstract}
 
 \section{Introduction}
 The Gibbard-Satterthwaite theorem proves that any deterministic voting rule cannot simultaneously satisfy the following three properties.\\
 i) Any alternative can be elected. \\
 ii) Not dictatorial: no single player can determine the winner of the game. \\
 iii) Strategy-proof: no player is better-off by misrepresenting his or her preference \cite{Satterthwaite}.\\
-Hence, we consider a randomized voting method as a potential solution to the voting manipulation.
+Hence, we consider a randomized voting method as a potential solution to the voting manipulation. Our main contribution is the analysis of the randomized candidate method.
 
 
 \section{Related Work}
 Bentert and Skowron provide a randomized voting method, described in \nameref{Algorithm} section. While their research motivation is to approximate deterministic voting methods with less information to be efficient, this paper analyzes the randomized algorithm as a potential solution to the voting manipulation. Their results show that even $l = 2$, with hundreds of voters, we can approximate minimal variance \cite{Skowron}.\\
 Procaccia analyzes the approximation of the lottery extension, selecting a winner based on the Borda count distribution. While the lottery extension is strategy-proof, it has an upper bound of approximation $\frac{1}{2} +\Omega{ \frac{1}{\sqrt{m}} }$  \cite{Procaccia_1}.\\
 Veselova introduces the concept of a manipulator having an incentive to misrepresent his preference under deterministic voting methods. Veselova defines that if there exists at least one possible situation when manipulation makes him better off, and nothing changes in all other situations, then the manipulator has an incentive to play strategically \cite{Veselova}. We extend the concept of having an incentive to randomized voting methods defined in the Preliminaries section.\\
-Ayadi et al. demonstrate a comparison of scoring voting methods Their research asks each voter to rank only top-k candidates. Their empirical result shows that harmonic scoring approximates better than Borda count \cite{Ayadi}. Since Bentert and Skowron prove that the randomized algorithm approximates well having large n with any decreasing order of the scoring method, we do not specify a scoring method in this paper. However, it will be beneficial to investigate the best scoring method in the randomized candidate method as a future study.
 
-\section{Our contribution}
-Our main contribution is the analysis of the randomized candidate method. We investigate followings: \\
-i) The randomized candidate algorithm reduces the chances that a manipulator has an incentive to misrepresent their preference. \\
-ii) Consequences of manipulation.\\
-iii) Noise of the randomized candidate method. 
 
 \section{The Randomized Candidate Voting Method} 
 \label{Algorithm}
@@ -227,15 +218,12 @@ $\binom{m-pos(A)+1}{l}$ refers to the number of ways that candidates rank lower 
 %Suppose a candidate $c_1 \in C_{higher}$ and a candidate$c_2 \in C_{lower} $are assigned to a manipulator, and he ranks ...
 Another virtue of the randomized candidate algorithm is that a manipulation increases the expected score of a candidate c $\in C_{lower}$ and not his target candidate A. This is due to the dependency of $E[X_c]$ on $pos(c)$, clearly from the equation (1). Let $pos(c’)$ be a position of c in $C_{lower} \symbol{92}A$ by manipulation and $pos(c)$ be by truthful preference such that $pos(c’) < pos(c)$. \\
 The equation (1) shows that $ \frac{\binom{pos_v(c)-1}{i-1}\binom{m-pos_v(c)}{l-i}}{\binom{m-1}{l-1}}$ is the probability that the candidate c is ranked at position $i$. Since manipulation causes $pos(c’) < pos(c)$, the probability that the candidate c is ranked at higher ranking i will be increased for c'. Moreover, since $\sum_{i=1}^l Pr(\text{c is ranked at i}) =1$,  the probability that the candidate c is ranked at lower ranking i will be decreased accordingly.\\
-From (1), consider $\binom{pos(c')-1}{i-1}$ and $\binom{pos(c)-1}{i-1}$. These binomial expressions become 0 $\forall i > pos(c’)$, pos(c) respectively. So for each $i= 1,2,...,pos(c')$,  the expression is a non-zero integer. Since $pos(c’) < pos(c)$,  the number of terms in $\sum_{i=1}^{pos(c')} \binom{pos(c')-1}{i-1}$ is less than that of $\sum_{i=1}^{pos(c)} \binom{pos(c)-1}{i-1}$ ...(a). Similarly, consider $\binom{m-pos(c)}{l-i}$. The binomial expression becomes 0 $\forall i$ such that $l-i < m-pos(c)$ where $l,m$ are fixed. Since $pos(c’) < pos(c)$, $m-pos(c’) > m-pos(c) \Rightarrow $ $\binom{m-pos(c)}{l-i} > \binom{m-pos(c')}{l-i}$ for the last index of $i$...(b).\\
-From (a) and (b), the range of the score vector $\alpha =  (a_1, a_2, ..., 1_{l-1})$ multiplied to the non-zero $\frac{\binom{pos(c')-1}{i-1} \binom{m-pos(c')}{l-i} }{\binom{m-1}{l-1}}$ is higher than that of $\frac{\binom{pos(c)-1}{i-1} \binom{m-pos(c)}{l-i} }{\binom{m-1}{l-1}}$. Since $\sum_{i=1}^{l} \frac{\binom{pos(c')-1}{i-1} \binom{m-pos(c')}{l-i}}{\binom{m-1}{l-1}} = 1$, the range of the score vector multiplied to $\sum_{i=1}^{l} \frac{\binom{pos(c')-1}{i-1} \binom{m-pos(c')}{l-i}}{\binom{m-1}{l-1}}$ is higher than $\sum_{i=1}^{l} \frac{\binom{pos(c)-1}{i-1} \binom{m-pos(c)}{l-i}}{\binom{m-1}{l-1}}$.
-
 
 \section{Analysis 3: Noise of the randomized method}
 While the randomized candidate method can reduce chances that manipulator has an incentive to manipulate, it has a cost of adding noise. Dubhashi and Ranjan prove that when random variables are negatively associated, we can still apply chernoff bounds \cite{BRICS}. A voter $v_i$ ranks a candidate in $pos_i(c)$ is the model of balls and bins, and hence $X_c$ is negatively associated. Bentert and Skowron demonstrate that $\forall$ $\delta$ $\in$ [0,1], $Pr(|X_c-E[X_c]| \geq \delta\cdot E[X_c]) \leq 2\cdot\exp{-\delta^2E[X_c]/3} $ \cite{Skowron}. This imply that if n is small, noise can be certain probability. \\
 For example, for $\delta = 0.1$,  suppose candidate A ranks the top for all voters, then $pos(A) = 1$ for all voters. Using Borda method, $E[X_A]=n\cdot((l-1)\cdot \frac{\binom{m-1}{l-1}}{\binom{m-1}{l-1}}) = n\cdot(l-1).$ Then $Pr(|X_c-E[X_c]| \geq 0.1\cdot E[X_c]) \leq 2\cdot\exp{-0.01n(l-1)/3} $.
 With $n=200$ voter and $l=4$, $Pr(|X_c-E[X_c]| \geq 0.1\cdot E[X_c]) \leq 2\cdot\exp{-6/3} = 27\%$.
-This analysis implies that if smaller number of voters increases the upper bound of probability that actual randomized score deviates from the expected score, which eventually leads to the increment of $E[X_c]$ for c in $C_{lower}$. Since the increment $E[X_c]$ depends on $pos(c)$, $E[X_A]$ does not change. This implies a manipulation increases the chances of winning for his less favorite candidates.
+
 
 \section{Conclusion and Future Direction}
 As we show already, the randomized candidate method can reduce the chances of manipulator having an incentive to misrepresent his preference. This result means the randomized candidate method could produce strategy-proof voting with some probability. However, if the number of voters is small, the algorithm adds the cost of noise.\\
