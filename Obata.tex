@@ -185,6 +185,7 @@ A brief description of the randomized candidate method introduced by Bentert and
 
 \section{Preliminaries}
 %Since we investigate constructive manipulation, let A be the manipulator’s target candidate. In other words, he schemes to make A elected.
+We first suppose a manipulator knows the preference profile of other voters. Secondly, the manipulator schemes to do constructive manipulation, which he wants to make his more favorite candidate elected.\\
 Since each voter $v_i$ is equipped with a linear order of preference over the candidates, $pos_v(c)$ means the position of c in $v_i$’s preference ranking.\\
 Based on the randomized candidate method, Bentert and Skowron, denote random variable $X_c$ as the score that candidate c receives from the algorithm. Since we assume a manipulator has complete information of other voters, he can compute E[$X_c$] of all candidates, which implies that he can construct an aggregated ranking of all candidates based on E[$X_c$]. To analyze the algorithm let us denote $C_{higher}$ as a set of candidates having higher E[$X_c$] than that of the manipulator’s target candidate A. Similarly, denote $C_{lower}$  as a set of candidates having lower E[$X_c$] than that of the manipulator’s target candidate A or A itself. Bentert and Skowron show that the expected score from the randomized candidate algorithm can be expressed as follows: \\ 
 \begin{equation} 
@@ -201,7 +202,8 @@ For example, given a set of candidates = (A, B, C, D, E), suppose a manipulator�
 
 \section{Analysis 1: Chances of losing an incentive to manipulate}
 %Suppose manipulators have a constructive manipulation whose goal is to make their favorite candidate A win the election. 
-First, we consider when n is small. Whether the motivation of a manipulator is a constructive manipulation or simply maximizing his expected utility, he will compute the conditional probability of each candidate being elected under truthful voting and misrepresented voting by the number of ways $X_c > X_i$
+%Whether the motivation of a manipulator is a constructive manipulation or simply maximizing his expected utility,
+A manipulator needs aggregated ranking information to manipulate and increase the chances that his favorite candidate wins. Under deterministic voting methods, aggregated ranking is the total score of each candidate. Hence we consider how a manipulator would obtain an aggregated ranking under the randomized method. First when n is small, a manipulator will compute the conditional probability of each candidate being elected under truthful voting and misrepresented voting. This is computed by counting the number of ways $X_c > X_i$
 %Since a manipulator wants to maximize his utility, he will compute the probability of each candidate being elected under misrepresented voting. Then he will vote for producing the highest expected utility. The probabilities of each candidate being elected can be computed by following:
 %\begin{equation}
 %Pr(\text{c is elected}\mid \text{truthful}) =
@@ -212,8 +214,9 @@ First, we consider when n is small. Whether the motivation of a manipulator is a
 %\frac{ \text{the number of ways } X_c > X_i}{\binom{m}{l}^n}
 %\end{equation} 
 $\forall i \in C$ divided by the total ways of candidate assignment for all voters, $\binom{m}{l}^n$. To count the number of ways $X_c$ is the highest, it is necessary to verify $\binom{m}{l}^n $ cases. This implies that since $\binom{m}{l}$ is always an integer, the runtime of computing probabilities of each candidate being elected is exponential time. Thus, a manipulator being able to compute the exact probabilities of each candidate with a conventional computer is only possible when n is small.\\
-However, this does not mean a manipulator stops misrepresenting his preference when n is large. As Bentert and Skowron prove, the probability that the score computed by the randomized candidate method differs from its expected score is upper bounded by $2\cdot\exp{-\delta^2E[X_c]/3}$ for $\delta \in [0,1]$. Hence, if the manipulator can compute $E[X_c]$, then the actual score from the randomized candidate method would be close to the $E[X_c]$ if n is large. Hence, the manipulator schemes to maximize $E[X_c]$
-for his target candidate A and decrease $E[X_{higher}\mid\text{manipulation}]$ $\forall higher \in C_{higher}$ from  $E[X_{higher}\mid \text{truthful}]$. Hence, we have the following result.\\
+However, this does not mean a manipulator stops misrepresenting his preference when n is large. As Bentert and Skowron prove, the probability that the score computed by the randomized candidate method differs from its expected score is upper bounded by $2\cdot\exp{-\delta^2E[X_c]/3}$ for $\delta \in [0,1]$. Hence, if the manipulator can compute $E[X_c]$, then the actual score from the randomized candidate method would be close to the $E[X_c]$ if n is large. Hence, the manipulator schemes to satisfy the inequality $(2)$.
+%Hence, the manipulator schemes to maximize $E[X_c]$ for his target candidate A and decrease $E[X_{higher}\mid\text{manipulation}]$ $\forall higher \in C_{higher}$ from  $E[X_{higher}\mid \text{truthful}]$. 
+Hence, we have the following result.\\
 \textbf{Result:}
 $$Pr(\text{a manipulator loses an incentive to manipulate})$$
 \begin{equation}

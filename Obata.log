@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.20)  31 AUG 2020 11:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.20)  2 SEP 2020 12:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -274,7 +274,7 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 158.
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--190
+Underfull \hbox (badness 10000) in paragraph at lines 188--191
 
  []
 
@@ -283,90 +283,90 @@ Underfull \hbox (badness 10000) in paragraph at lines 188--190
 
 
 ]
-Overfull \hbox (11.38957pt too wide) detected at line 192
+Overfull \hbox (11.38957pt too wide) detected at line 193
 \OML/cmm/m/it/10 E\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 X[]\OT1/cmr/m/n/10 ] = [] [
 ] [] \OML/cmm/m/it/10 [][][]
  []
 
 
-Overfull \hbox (17.50162pt too wide) detected at line 196
+Overfull \hbox (17.50162pt too wide) detected at line 197
 \OML/cmm/m/it/10 E\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 X[] \OMS/cmsy/m/n/10 j []\O
 T1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 E\OT1/cmr/m/n/10 [\OML/cm
 m/m/it/10 X[] \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 truthful\OT1/cmr/m/n/10 ]
  []
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 228.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 231.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 228.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 231.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 229.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 232.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 230.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 233.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 230.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 233.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 230.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 233.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 230.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 233.
 
 
-Underfull \hbox (badness 1735) in paragraph at lines 228--232
+Underfull \hbox (badness 1735) in paragraph at lines 231--235
 \OT1/ptm/m/n/10 Another virtue of the ran-dom-ized can-di-date al-go-rithm
  []
 
 
-Underfull \hbox (badness 3333) in paragraph at lines 228--232
+Underfull \hbox (badness 3333) in paragraph at lines 231--235
 \OT1/ptm/m/n/10 From (1), con-sider $[]$ and $[]$. These
  []
 
 
-Underfull \hbox (badness 1142) in paragraph at lines 228--232
+Underfull \hbox (badness 1142) in paragraph at lines 231--235
 \OT1/ptm/m/n/10 bi-no-mial ex-pres-sions be-come 0 $\OMS/cmsy/m/n/10 8\OML/cmm/
 m/it/10 i > pos\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 c[]\OT1/cmr/m/n/10 )$\OT1/ptm/
 m/n/10 , pos(c)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--232
+Underfull \hbox (badness 10000) in paragraph at lines 231--235
 \OT1/ptm/m/n/10 that of $[][] []$ ...(a). Sim-i-larly, con-sider
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--232
+Underfull \hbox (badness 10000) in paragraph at lines 231--235
 \OT1/ptm/m/n/10 From (a) and (b), the range of the score vec-
  []
 
 
-Underfull \hbox (badness 5359) in paragraph at lines 228--232
+Underfull \hbox (badness 5359) in paragraph at lines 231--235
 \OT1/ptm/m/n/10 tor $\OML/cmm/m/it/10  \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 a[]
 ; a[]; :::; \OT1/cmr/m/n/10 1[])$ \OT1/ptm/m/n/10 mul-ti-plied to the non-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--232
+Underfull \hbox (badness 10000) in paragraph at lines 231--235
 \OT1/ptm/m/n/10 zero $[]$ is higher than that of
  []
 
 
-Underfull \hbox (badness 1558) in paragraph at lines 228--232
+Underfull \hbox (badness 1558) in paragraph at lines 231--235
 []$\OT1/ptm/m/n/10 . Since $[][] [] \OT1/cmr/m/n/10 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--232
+Underfull \hbox (badness 10000) in paragraph at lines 231--235
 \OT1/cmr/m/n/10 1$\OT1/ptm/m/n/10 , the range of the score vec-tor mul-ti-plied
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--232
+Underfull \hbox (badness 10000) in paragraph at lines 231--235
 \OT1/ptm/m/n/10 to $[][] []$ is higher than
  []
 
@@ -374,7 +374,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--232
 Here is how much of TeX's memory you used:
  3873 strings out of 492616
  57630 string characters out of 6129481
- 140725 words of memory out of 5000000
+ 141725 words of memory out of 5000000
  7729 multiletter control sequences out of 15000+600000
  22493 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -396,7 +396,7 @@ fb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 sr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/t
 exlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/201
 9/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Obata.pdf (3 pages, 173205 bytes).
+Output written on Obata.pdf (3 pages, 173362 bytes).
 PDF statistics:
  79 PDF objects out of 1000 (max. 8388607)
  57 compressed objects within 1 object stream
