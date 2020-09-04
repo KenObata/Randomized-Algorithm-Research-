@@ -205,7 +205,7 @@ E[X_{higher} \mid \text{misrepresent preference}] \le E[X_{higher} \mid truthful
 $\text{for all other } higher \in C_{higher}.$
  %$$\forall higher \in C_{higher}.$$
  % We might need to move this down to analysis section because we haven't talked about pos(A) up means higher E[X_c].
-For example, given a set of candidates = (A, B, C, D, E), suppose a manipulator’s true preference is ($A\succ B\succ C\succ D\succ E$). We suppose aggregated ranking of E[$X_c$] is ($B\succ C\succ A\succ D\succ E$) where B has the highest E[$X_c$]. For $l=2$, if candidate assignment is (C, D), then the manipulator has an incentive to misrepresent his preference. Since truthful voting is $C\succ D$, and misrepresented vote is $D \succ C$, the inequality (1) is satisfied. 
+For example, given a set of candidates = (A, B, C, D, E), suppose a manipulator’s true preference is ($A\succ B\succ C\succ D\succ E$). We suppose aggregated ranking of E[$X_c$] is ($B\succ C\succ A\succ D\succ E$) where B has the highest E[$X_c$]. For $l=2$, if candidate assignment is (C, D), then the manipulator has an incentive to misrepresent his preference. Since truthful voting is $C\succ D$, and misrepresented vote is $D \succ C$, the inequality $(2)$ is satisfied. 
 %Hence, the manipulator has an incentive to manipulate in this situation.
 
 \section{Analysis 1: Chances of losing an incentive to manipulate}
@@ -230,8 +230,8 @@ $$Pr(\text{a manipulator loses an incentive to manipulate})$$
 \begin{equation}
  = \frac{\binom{pos(A)}{l}+\binom{m-pos(A)+1}{l}}{\binom{m}{l}}.
 \end{equation}
-$\binom{pos(A)}{l}$ refers to the number of ways that candidates $\in C_{higher}$ and A occupy all the assignment. In this situation, no matter how the manipulator orders the assigned candidates, he cannot satisfy the inequality $(2)$ without violating the inequality for other candidates in $C_{higher}$.
-$\binom{m-pos(A)+1}{l}$ refers to the number of ways that candidates rank lower than A or A occupy all the assignment. In this situation, the manipulator has no control to change the $E[X_c]$ $\forall c \in X_{higher}$. Intuitively speaking, in this case, the manipulator cannot reduce the gap of score between his favorite candidate and candidates in the higher position. These cases are mutually exclusive. Hence, we sum these cases and divide by the total ways choosing $l$ subset of candidates from $m$ candidates. This explains the randomized candidate method can reduce the manipulator’s incentive to manipulate with certain probability. 
+$\binom{pos(A)}{l}$ refers to the number of ways that candidates $\in C_{higher}$ and $A$ occupy all the assignment. If $A$ is in the subset, the manipulator always ranks $A$ top. If $l = 2$, his vote is always $A\succ c \in C_{higher}$, which is his truthful voting. If $l>2$, no matter how the manipulator orders the assigned candidates, he cannot satisfy the inequality $(2)$ without violating the inequality for other candidates in $C_{higher}$. This is same when A is not in the subset.
+$\binom{m-pos(A)+1}{l}$ refers to the number of ways that candidates rank lower than A and A occupy all the assignment. In this situation, the manipulator has no control to change the $E[X_c]$ $\forall c \in X_{higher}$. Intuitively speaking, in this case, the manipulator cannot reduce the gap of score between his favorite candidate and candidates in the higher position. These cases are mutually exclusive. Hence, we sum these cases and divide by the total ways choosing $l$ subset of candidates from $m$ candidates. This explains the randomized candidate method can reduce the manipulator’s incentive to manipulate with certain probability. 
 %This probability can also be applied to the case when n is small. If n is small, a manipulator will compute probabilities of wins for each candidate. In other words, these probabilities are aggregated ranking of the candidates.
 
 \section{Analysis 2: Manipulators have a price to pay}
