@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.20)  4 SEP 2020 13:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.20)  4 SEP 2020 13:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -274,7 +274,7 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 155.
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--191
+Underfull \hbox (badness 10000) in paragraph at lines 187--192
 
  []
 
@@ -283,34 +283,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 187--191
 
 
 ]
-Overfull \hbox (11.38957pt too wide) detected at line 193
+Overfull \hbox (11.38957pt too wide) detected at line 194
 \OML/cmm/m/it/10 E\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 X[]\OT1/cmr/m/n/10 ] = [] [
 ] [] \OML/cmm/m/it/10 [][][]
  []
 
 
-Overfull \hbox (17.50162pt too wide) detected at line 199
+Overfull \hbox (17.50162pt too wide) detected at line 200
 \OML/cmm/m/it/10 E\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 X[] \OMS/cmsy/m/n/10 j []\O
 T1/cmr/m/n/10 ] \OML/cmm/m/it/10 < E\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 X[] \OMS/
 cmsy/m/n/10 j \OML/cmm/m/it/10 truthful\OT1/cmr/m/n/10 ]
  []
 
 
-Overfull \hbox (17.50162pt too wide) detected at line 203
+Overfull \hbox (17.50162pt too wide) detected at line 204
 \OML/cmm/m/it/10 E\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 X[] \OMS/cmsy/m/n/10 j []\O
 T1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 E\OT1/cmr/m/n/10 [\OML/cm
 m/m/it/10 X[] \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 truthful\OT1/cmr/m/n/10 ]
  []
 
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 229.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 230.
 [2] (./Obata.bbl) [3
 
 ] (./Obata.aux) ) 
 Here is how much of TeX's memory you used:
  3877 strings out of 492616
  57694 string characters out of 6129481
- 140725 words of memory out of 5000000
+ 138725 words of memory out of 5000000
  7733 multiletter control sequences out of 15000+600000
  22493 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -332,7 +332,7 @@ ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive
 9/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-di
 st/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on Obata.pdf (3 pages, 169575 bytes).
+Output written on Obata.pdf (3 pages, 168780 bytes).
 PDF statistics:
  79 PDF objects out of 1000 (max. 8388607)
  57 compressed objects within 1 object stream

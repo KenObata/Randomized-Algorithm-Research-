@@ -186,7 +186,8 @@ Ayadi et al. demonstrate a comparison of scoring voting methods Their research a
 %Since we investigate constructive manipulation, let A be the manipulator’s target candidate. In other words, he schemes to make A elected.
 We first suppose a manipulator knows the preference profile of other voters. Secondly, the manipulator schemes to do constructive manipulation, which they want to make their most favorite candidate, $A$, elected.\\
 Since each voter $v_i$ is equipped with a linear order of preference over the candidates, $pos_{v_i(}c)$ means the position of a candidate $c$ in $v_i$’s preference ranking.\\
-Based on the randomized candidate method, Bentert and Skowron, denote random variable $X_c$ as the score that candidate c receives from the algorithm. Since we assume a manipulator has complete information of other voters, they can compute E[$X_c$] of all candidates, which implies that they can construct an aggregated ranking of all candidates based on E[$X_c$]. To analyze the algorithm let us denote $C_{higher}$ as a set of candidates having higher E[$X_c$] than that of the manipulator’s target candidate $A$. Similarly, denote $C_{lower}$  as a set of candidates having lower E[$X_c$] than that of the manipulator’s target candidate $A$.%or $A$ itself
+Based on the randomized candidate method, Bentert and Skowron, denote random variable $X_c$ as the score that candidate c receives from the algorithm. To analyze the algorithm let us denote $C_{higher}$ as a set of candidates having higher E[$X_c$] than that of the manipulator’s target candidate $A$. Similarly, denote $C_{lower}$  as a set of candidates having lower E[$X_c$] than that of the manipulator’s target candidate $A$.%or $A$ itself
+%Since we assume a manipulator has complete information of other voters, they can compute E[$X_c$] of all candidates, which implies that they can construct an aggregated ranking of all candidates based on E[$X_c$]. 
 \\Bentert and Skowron show that the expected score from the randomized candidate algorithm can be expressed as follows: \\ 
 \begin{equation} 
 E[X_c] = \frac{1}{\binom{m-1}{l-1}}\sum_{\text{all voter}} \sum_{i=1}^l \alpha_i \binom{pos_v(c)-1}{i-1}\binom{m-pos_v(c)}{l-i} 
@@ -204,7 +205,7 @@ E[X_{higher} \mid \text{misrepresent preference}] \le E[X_{higher} \mid truthful
 %$\text{ and for all other } higher \in C_{higher}.$
  %$$\forall higher \in C_{higher}.$$
  % We might need to move this down to analysis section because we haven't talked about pos(A) up means higher E[X_c].
-For example, given a set of candidates = (A, B, C, D, E), suppose a manipulator’s true preference is ($A\succ B\succ C\succ D\succ E$). We suppose aggregated ranking of E[$X_c$] is ($B\succ C\succ A\succ D\succ E$) where B has the highest E[$X_c$]. For $l=2$, if candidate assignment is (C, D), then the manipulator has an incentive to misrepresent their preference. Since truthful voting is $C\succ D$, and misrepresented vote is $D \succ C$, the inequality $(2)$ is satisfied. 
+%For example, given a set of candidates = (A, B, C, D, E), suppose a manipulator’s true preference is ($A\succ B\succ C\succ D\succ E$). We suppose aggregated ranking of E[$X_c$] is ($B\succ C\succ A\succ D\succ E$) where B has the highest E[$X_c$]. For $l=2$, if candidate assignment is (C, D), then the manipulator has an incentive to misrepresent their preference. Since truthful voting is $C\succ D$, and misrepresented vote is $D \succ C$, the inequality $(2)$ is satisfied. 
 %Hence, the manipulator has an incentive to manipulate in this situation.
 
 \section{Chances of losing an incentive to manipulate}
