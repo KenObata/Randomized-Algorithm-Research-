@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.20)  4 SEP 2020 13:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.20)  13 SEP 2020 17:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -274,7 +274,7 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 155.
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--192
+Underfull \hbox (badness 10000) in paragraph at lines 184--187
 
  []
 
@@ -283,59 +283,76 @@ Underfull \hbox (badness 10000) in paragraph at lines 187--192
 
 
 ]
-Overfull \hbox (11.38957pt too wide) detected at line 194
+Overfull \hbox (9.55702pt too wide) detected at line 189
 \OML/cmm/m/it/10 E\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 X[]\OT1/cmr/m/n/10 ] = [] [
 ] [] \OML/cmm/m/it/10 [][][]
  []
 
 
-Overfull \hbox (17.50162pt too wide) detected at line 200
+Overfull \hbox (17.50162pt too wide) detected at line 195
 \OML/cmm/m/it/10 E\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 X[] \OMS/cmsy/m/n/10 j []\O
 T1/cmr/m/n/10 ] \OML/cmm/m/it/10 < E\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 X[] \OMS/
 cmsy/m/n/10 j \OML/cmm/m/it/10 truthful\OT1/cmr/m/n/10 ]
  []
 
 
-Overfull \hbox (17.50162pt too wide) detected at line 204
+Overfull \hbox (17.50162pt too wide) detected at line 199
 \OML/cmm/m/it/10 E\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 X[] \OMS/cmsy/m/n/10 j []\O
 T1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 E\OT1/cmr/m/n/10 [\OML/cm
 m/m/it/10 X[] \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 truthful\OT1/cmr/m/n/10 ]
  []
 
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 230.
-[2] (./Obata.bbl) [3
+
+Underfull \hbox (badness 1019) in paragraph at lines 231--234
+\OT1/ptm/m/n/10 A voter $\OML/cmm/m/it/10 v[]$ \OT1/ptm/m/n/10 ranks a can-di-d
+ate in $\OML/cmm/m/it/10 pos[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 c\OT1/cmr/m/n/1
+0 )$ \OT1/ptm/m/n/10 is the model
+ []
+
+
+Underfull \hbox (badness 1142) in paragraph at lines 231--234
+\OT1/ptm/m/n/10 of balls and bins, and hence $\OML/cmm/m/it/10 X[]$ \OT1/ptm/m/
+n/10 is neg-a-tively as-so-ci-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--234
+
+ []
+
+(./Obata.bbl [2]) [3
 
 ] (./Obata.aux) ) 
 Here is how much of TeX's memory you used:
- 3877 strings out of 492616
- 57694 string characters out of 6129481
- 138725 words of memory out of 5000000
- 7733 multiletter control sequences out of 15000+600000
- 22493 words of font info for 51 fonts, out of 8000000 for 9000
+ 3871 strings out of 492616
+ 57613 string characters out of 6129481
+ 137725 words of memory out of 5000000
+ 7728 multiletter control sequences out of 15000+600000
+ 21415 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,17n,38p,918b,379s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,17n,38p,987b,379s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.en
 c}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 ></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></
 usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
-r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/loc
-al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/
-texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
-exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/tex
-live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
-ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive
-/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
-019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/201
-9/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-di
-st/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/t
-ype1/urw/times/utmri8a.pfb>
-Output written on Obata.pdf (3 pages, 168780 bytes).
+r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/
+local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local
+/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
+xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texli
+ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
+/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2
+019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/201
+9/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2019/
+texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist
+/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/typ
+e1/urw/times/utmri8a.pfb>
+Output written on Obata.pdf (3 pages, 173886 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 83 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
